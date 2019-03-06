@@ -10,7 +10,7 @@ static void displayTimer
 	le_timer_Ref_t displayTimerRef
 )
 {
-	lv_tick_inc(5);
+	lv_tick_inc(DISPLAY_SAMPLE_INTERVAL_IN_MILLISECONDS);
 	lv_task_handler();
 }
 
